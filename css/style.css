@@ -13,22 +13,43 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: transparent;
+    position: relative;
+    top: 100px;
   }
   
   li {
     float: left;
     position: relative;
-    left: 50rem;
+    left: 42rem;
   }
   
   li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
+    font-size: larger;
+    padding: 14px 30px;
     text-decoration: none;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
   }
   
   li a:hover {
     background-color: grey;
   }
+
+  nav > img {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      left: 28rem;
+  }
+
+.foto-drankjes > img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    left: 25rem;
+    top: 150px;
+}
+

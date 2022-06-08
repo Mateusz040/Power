@@ -10,16 +10,21 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Power Drink</title>
 </head>
 <body>
     <nav>
+        <img src="images/logo.png" alt="logo">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="#">Producten</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Aanbiedeingen</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
         </ul>
     </nav>
+    <div class="foto-drankjes">
+        <img src="images/art.png" alt="">
+    </div>
 </body>
 </html>
