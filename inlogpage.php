@@ -2,6 +2,7 @@
 $error;
 if(isset($_POST['submit'])){
     if (!empty($_POST["username"]) && !empty($_POST["password"])){
+        require 'connectie.php';
 
             $username = $_POST["username"];
             $password = $_POST["password"];
