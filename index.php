@@ -7,15 +7,18 @@
     <meta name="description" content="Power energy">
     <meta name="keywords" content="HTML, CSS, JavaScript, PHP, SQL">
     <meta name="author" content="Mateusz, Mats, Michael, Esat">
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
         </ul>
     </nav>
 </body>
