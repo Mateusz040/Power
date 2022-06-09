@@ -23,9 +23,5 @@
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
-    <div class="foto-drankjes">
-        <img src="images/art.png" alt="art">
-        <img src="images/unleash.png" alt="">
-    </div>
 </body>
 </html>
