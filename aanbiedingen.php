@@ -9,10 +9,11 @@
 <body>]
 
 <?php
+require('connectie.php');
 $sql = "SELECT * FROM aanbiedingen";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
-    echo $row[1]. " " .$row[2]. "" .$row[3]."<br>".;; 
+    echo $row[1]. " " .$row[2]. "" .$row[3]. " " .$row[4]. "" .$row[5]. "" .$row[6]"<br>".;; 
 } 
 } else {
     echo "query werkt niet";
