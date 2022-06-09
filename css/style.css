@@ -9,36 +9,39 @@ body {
     background-size: cover;
 }
 
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: transparent;
-    position: relative;
-    top: 100px;
-  }
-  
-  li {
-    float: left;
-    position: relative;
-    left: 42rem;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: larger;
-    padding: 14px 30px;
-    text-decoration: none;
-    font-family: 'Russo One', sans-serif;
-    font-weight: bold;
-  }
-  
-  li a:hover {
-    background-color: grey;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  top: 100px;
+}
+
+li {
+  float: left;
+  position: relative;
+  left: 42rem;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: larger;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-family: 'Russo One', sans-serif;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+
 
   nav > img {
       height: 200px;
@@ -54,6 +57,20 @@ ul {
     height: 50%;
     left: 25rem;
     top: 150px;
+
+}
+
+.foto2 > img {
+  position: absolute;
+  left: 38.5rem;
+  top: 40rem;
+}
+
+
+.foto3 > img {
+  position: absolute;
+  left: 38.5rem;
+  top: 40rem;
 }
 
 
