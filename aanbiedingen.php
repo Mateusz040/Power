@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>]
+<body>
 
 <?php
 require('connectie.php');
 $sql = "SELECT * FROM aanbiedingen";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
-    echo $row[1]. " " .$row[2]. "" .$row[3]. " " .$row[4]. "" .$row[5]. "" .$row[6]"<br>".;; 
+    echo "<section class='aanbieding'>".$row[1]. "<img src='aanbiedingen/" .$row[5]."' alt=''></section>";
 } 
 } else {
     echo "query werkt niet";
 }
 ?>
+
+
     
 </body>
 </html>
