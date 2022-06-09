@@ -19,12 +19,13 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Producten</a></li>
             <li><a href="#">Events</a></li>
-            <li><a href="#">Aanbiedeingen</a></li>
+            <li><a href="#">Aanbidingen</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <div class="foto-drankjes">
-        <img src="images/art.png" alt="">
+        <img src="images/art.png" alt="art">
+        <img src="images/unleash.png" alt="">
     </div>
 </body>
 </html>
