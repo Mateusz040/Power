@@ -25,7 +25,10 @@
     </nav>
 
 <?php
+
 require('connectie.php');
+
+
 $sql = "SELECT * FROM evenementen";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
