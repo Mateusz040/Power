@@ -28,15 +28,16 @@
 require('connectie.php');
 $sql = "SELECT * FROM aanbiedingen";
 if($result = $conn->query($sql)){
-while ($row = $result-> fetch_row()){
-    echo "<section class='aanbieding'>".$row[1]. "<img src='aanbiedingen/" .$row[5]."' alt=''></section>";
-} 
+while ($row = $result-> fetch_array()){
+    $image = $row['afbeelding'];
+    echo 
+    "<img src='aanbiedingen/".$image."' />";
+ }
 } else {
     echo "query werkt niet";
 }
 ?>
 
 
-    
 </body>
 </html>
