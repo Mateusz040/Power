@@ -9,7 +9,7 @@
 <body>
 <?php
 require('connectie.php');
-$sql = "SELECT * FROM aanbiedingen";
+$sql = "SELECT * FROM evenementen";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
     echo "<section class='evenementen'>".$row[1]. "" .$row[4]."</section>";
