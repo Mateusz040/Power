@@ -31,5 +31,16 @@
         <img src="images/unleash.png" alt="unleash">
     </div>
 </article>
+<?php
+require('connectie.php');
+$sql = "SELECT * FROM aanbiedingen";
+if($result = $conn->query($sql)){
+while ($row = $result-> fetch_row()){
+    echo "<section class='aanbieding'>".$row[1]. "<img src='aanbiedingen/" .$row[3]."' alt=''></section>";
+} 
+} else {
+    echo "query werkt niet";
+}
+?>
 </body>
 </html>
