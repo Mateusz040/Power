@@ -82,6 +82,8 @@ li a:hover {
   padding: 10px;
   font-size: larger;
   font-family: 'Russo One', sans-serif;
+  margin-left: 50px;
+  
 }
 
 .huidige-aanbiedingen {
@@ -89,6 +91,40 @@ li a:hover {
   padding: 5px;
   font-size: larger;
   font-family: 'Russo One', sans-serif;
+  margin-left: 50px;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+h1 {
+  -webkit-text-stroke: 1px red;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    margin-left: 50px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.evenementen h1 {
+  -webkit-text-stroke: 1px red;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    margin-left: 50px;
+    font-family: 'Russo One', sans-serif;
+    margin-left: 50rem;
 }
 
 

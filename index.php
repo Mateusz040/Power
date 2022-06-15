@@ -33,6 +33,7 @@
 </article>
 <?php
 require('connectie.php');
+echo "<h1>Huidige aanbiedingen</h1>";
 $sql = "SELECT titel, omschrijving FROM aanbiedingen LIMIT 3 OFFSET 4";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
@@ -44,11 +45,11 @@ while ($row = $result-> fetch_row()){
     echo "query werkt niet";
 }
 
-require('connectie.php');
-$sql = "SELECT artiest_id FROM evenementen LEFT JOIN artiesten  ON evenemneten.artiest_id = artiesten.artiest_id LIMIT 3 OFFSET 4";
+echo "<h1 class = 'evenementen'>Aankomende evenementen</h1>";
+$sql = "SELECT titel, omschrijving FROM aanbiedingen LIMIT 3 OFFSET 4";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
-    echo "<h2 class = 'aankomende-evenementen'>$row[0]</h2>";
+    echo "<h2 class = 'aankomende-events'>$row[0]</h2>";
 
 } 
 } else {
