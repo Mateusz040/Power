@@ -118,7 +118,7 @@ h1 {
    color: white;
    text-shadow:
        3px 3px 0 #000,
-     -1px -1px 0 #000,  
+      -1px -1px 0 #000,  
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
@@ -145,4 +145,10 @@ img[id="Doldwaze dagen"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact {
+  position: relative;
+  text-align: center;
+  top: 18vh;
 }
