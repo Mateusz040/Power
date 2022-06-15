@@ -23,5 +23,22 @@
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
+    
+<form class = contact method="POST" action="">
+    <h1>Contact</h1>
+    <form method="POST">
+    <label>Email:</label><br><input type="tekst" name="Email" ><br>
+    <label>Probleem:</label><br><input type="Probleem" name="Probleem"><br><br>
+    <input type="submit" name="submit" value="Verzend">
+</form>
+</form>
+
+<?php
+if(isset($_POST['submit'])){
+    header("Location: index.php");
+    }
+?>
+
+
 </body>
 </html>
