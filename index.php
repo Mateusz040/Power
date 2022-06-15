@@ -33,14 +33,29 @@
 </article>
 <?php
 require('connectie.php');
-$sql = "SELECT * FROM aanbiedingen";
+$sql = "SELECT titel, omschrijving FROM aanbiedingen LIMIT 3 OFFSET 4";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
-    echo "<section class='aanbieding'>".$row[1]. "<img src='aanbiedingen/" .$row[3]."' alt=''></section>";
+    echo "<h2 class = 'huidige-aanbiedingen'>$row[0]</h2>";
+    echo "<p class = 'huidige-aanbiedingen-omschrijving'>$row[1]</p>";
+
 } 
 } else {
     echo "query werkt niet";
 }
+
+require('connectie.php');
+$sql = "SELECT artiest_id FROM evenementen LEFT JOIN artiesten  ON evenemneten.artiest_id = artiesten.artiest_id LIMIT 3 OFFSET 4";
+if($result = $conn->query($sql)){
+while ($row = $result-> fetch_row()){
+    echo "<h2 class = 'aankomende-evenementen'>$row[0]</h2>";
+
+} 
+} else {
+    echo "query werkt niet";
+}
+
+
 ?>
 </body>
 </html>

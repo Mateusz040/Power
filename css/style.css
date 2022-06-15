@@ -73,11 +73,23 @@ li a:hover {
   top: 40rem;
 }
 
-.aanbieding {
+.flex-container h1 {
   color: white;
-  
 }
 
+.huidige-aanbiedingen-omschrijving {
+  color: white;
+  padding: 10px;
+  font-size: larger;
+  font-family: 'Russo One', sans-serif;
+}
+
+.huidige-aanbiedingen {
+  color: red;
+  padding: 5px;
+  font-size: larger;
+  font-family: 'Russo One', sans-serif;
+}
 
 
 
