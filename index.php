@@ -46,10 +46,10 @@ while ($row = $result-> fetch_row()){
 }
 
 echo "<h1 class = 'evenementen'>Aankomende evenementen</h1>";
-$sql = "SELECT artiesten.naam FROM evenementen LEFT JOIN locaties  ON evenementen.artiest = locaties.locatie_id";
+$sql = "SELECT naam  FROM artiesten LIMIT 3 OFFSET 4";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
-    echo "<h2 class = 'aankomende-events'>$row[0]</h2>";
+    echo "<p class = 'aankomende-events'>$row[0]</p>";
 
 } 
 } else {

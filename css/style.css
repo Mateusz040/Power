@@ -129,6 +129,14 @@ h1 {
     bottom: 0;
 }
 
+.aankomende-events {
+  color: white;
+  padding: 10px;
+  font-size: larger;
+  font-family: 'Russo One', sans-serif;
+  margin-left: 50px;
+}
+
 #Voorjaarsaanbieding {
   overflow: hidden;
   position: absolute;
