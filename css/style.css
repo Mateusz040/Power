@@ -91,6 +91,22 @@ li a:hover {
   font-family: 'Russo One', sans-serif;
 }
 
+#Voorjaarsaanbieding {
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  display: flex;
+}
+
+img[id="Doldwaze dagen"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
-
+#Lenteactie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
