@@ -145,6 +145,15 @@ h1 {
   bottom: 40rem;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between | center;
+  align-items: center;
+  margin-top: 250px;
+}
+
 #Voorjaarsaanbieding {
   overflow: hidden;
   position: absolute;

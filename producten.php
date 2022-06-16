@@ -23,5 +23,14 @@
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
+
+    <section class="flex-container">
+       <article>
+        <img src="images/aardbei.png" alt="aardbeismaak">
+        <img src="images/appel.png" alt="appelsmaak">
+        <img src="images/watermeloen.png" alt="watermeloensmaak">
+        <img src="images/citroen.png" alt="citroensmaak">
+       </article>
+    </section>
 </body>
 </html>
