@@ -32,5 +32,13 @@
         <img src="images/citroen.png" alt="citroensmaak">
        </article>
     </section>
+    <section>
+    <article class="container">
+        <button class = "meer-info1"><a href="#">Meer info</a></button>
+        <button class = "meer-info2"><a href="#">Meer info</a></button>
+        <button class = "meer-info3"><a href="#">Meer info</a></button>
+        <button class = "meer-info4"><a href="#">Meer info</a></button>
+       </article>
+    </section>
 </body>
 </html>
