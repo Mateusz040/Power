@@ -23,12 +23,13 @@
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
+   
     
-<form class = contact method="POST" action="">
+<form class = contact method="POST" action=""> 
     <h1>Contact</h1>
     <form method="POST">
-    <label>Email:</label><br><input type="tekst" name="Email" ><br>
-    <label>Probleem:</label><br><input type="Probleem" name="Probleem"><br><br>
+    <label>Email:</label><br><input type="text" name="Email" ><br>
+    <label>Probleem:</label><br><textarea name="probleem" id="hoogte" cols="0" rows="10"></textarea><br><br>
     <input type="submit" name="submit" value="Verzend">
 </form>
 </form>

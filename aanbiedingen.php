@@ -32,6 +32,7 @@ $sql = "SELECT * FROM aanbiedingen LIMIT 3 OFFSET 4";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_array()){
     $image = $row['afbeelding'];
+    
 echo"<img src='aanbiedingen/".$image."' />";
  }
 } else {
