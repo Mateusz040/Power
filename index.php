@@ -21,7 +21,8 @@
             <li><a href="producten.php">Producten</a></li>
             <li><a href="events.php">Events</a></li>
             <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
-            <li><a href="contact.php">Contact</a></li>  
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="#">Log in</a></li>
         </ul>
     </nav>
     <div class="foto-drankjes">
@@ -46,7 +47,7 @@ while ($row = $result-> fetch_row()){
 }
 
 echo "<h1 class = 'evenementen'>Aankomende evenementen</h1>";
-$sql = "SELECT evenementen.datum, locaties.gebouw FROM evenementen LEFT JOIN locaties ON evenementen.datum = locaties.gebouw WHERE datum > NOW() LIMIT 3;";
+$sql = "SELECT evenementen.datum, locaties.gebouw FROM evenementen LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id WHERE datum > NOW() LIMIT 3;";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
     echo "<p class = 'aankomende-events'>$row[0]</p>";

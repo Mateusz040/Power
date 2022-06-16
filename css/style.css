@@ -155,6 +155,22 @@ h1 {
 
 }
 
+#aardbei-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 180px;
+  margin-left: 5%;
+}
+
+.aardbei-info p {
+  color: white;
+  font-size: larger;
+  font-family: 'Russo One', sans-serif;
+  margin-left: 50px;
+}
+
 #Voorjaarsaanbieding {
   overflow: hidden;
   position: absolute;

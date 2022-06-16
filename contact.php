@@ -21,6 +21,7 @@
             <li><a href="events.php">Events</a></li>
             <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
             <li><a href="contact.php">Contact</a></li>
+            <li><a href="#">Log in</a></li>
         </ul>
     </nav>
     

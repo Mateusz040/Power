@@ -24,22 +24,11 @@
             <li><a href="#">Log in</a></li>
         </ul>
     </nav>
-
-    <section class="flex-container">
-       <article>
-        <img src="images/aardbei.png" alt="aardbeismaak">
-        <img src="images/appel.png" alt="appelsmaak">
-        <img src="images/watermeloen.png" alt="watermeloensmaak">
-        <img src="images/citroen.png" alt="citroensmaak">
-       </article>
-    </section>
-    <section>
-    <article class="container">
-        <button class = "meer-info1"><a href="aardbei.php">Meer info</a></button>
-        <button class = "meer-info2"><a href="#">Meer info</a></button>
-        <button class = "meer-info3"><a href="#">Meer info</a></button>
-        <button class = "meer-info4"><a href="#">Meer info</a></button>
-       </article>
+    <section class ="aardbei-info">
+        <h1 id ="aardbei-info">Powerdrink aardbeismaak</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
     </section>
 </body>
 </html>
