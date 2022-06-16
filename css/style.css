@@ -129,12 +129,20 @@ h1 {
     bottom: 0;
 }
 
-.aankomende-events {
+.aankomende-events  {
   color: white;
   padding: 10px;
   font-size: larger;
   font-family: 'Russo One', sans-serif;
-  margin-left: 50px;
+  margin-left: 100rem;
+  position: relative;
+  bottom: 38rem;
+}
+
+.evenementen {
+  margin-left: 100rem;
+  position: relative;
+  bottom: 40rem;
 }
 
 #Voorjaarsaanbieding {

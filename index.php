@@ -46,7 +46,7 @@ while ($row = $result-> fetch_row()){
 }
 
 echo "<h1 class = 'evenementen'>Aankomende evenementen</h1>";
-$sql = "SELECT naam  FROM artiesten LIMIT 3 OFFSET 4";
+$sql = "SELECT datum  FROM evenementen WHERE datum > NOW() LIMIT 3";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
     echo "<p class = 'aankomende-events'>$row[0]</p>";
