@@ -147,6 +147,18 @@ img[id="Doldwaze dagen"] {
   align-items: center;
 }
 
+.banner-images{
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+   
+}
+.banner-images img{
+width: 30%;
+display: block;
+}
 .contact {
   position: relative;
   text-align: center;

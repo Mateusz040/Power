@@ -24,21 +24,23 @@
         </ul>
     </nav>
 
-    
-
+    <section class="banner-images">
 <?php
 require('connectie.php');
-$sql = "SELECT * FROM aanbiedingen LIMIT 3 OFFSET 4";
+$sql = "SELECT * FROM aanbiedingen";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_array()){
     $image = $row['afbeelding'];
-    
-echo"<img src='aanbiedingen/".$image."' />";
+?>
+    <img src="aanbiedingen/<?php echo $image; ?>"  />;
+<?php
  }
 } else {
     echo "query werkt niet";
 }
+
 ?>
+</section>
 
 
 
