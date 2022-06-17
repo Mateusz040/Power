@@ -41,7 +41,9 @@ li a:hover {
   background-color: grey;
 }
 
-
+nav {
+  height: 250px;
+}
 
   nav > img {
       height: 200px;
@@ -140,9 +142,34 @@ h1 {
 }
 
 .evenementen {
-  margin-left: 100rem;
-  position: relative;
-  bottom: 40rem;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  color: #ccc;
+}
+
+.link {
+  color: blue;
+  border: #000 3px solid;
+  background-color: #ccc;
+  font: bold 12px/12px sans-serif;
+  padding: 10px;
+}
+
+.datum {
+  width: 100px;
+}
+
+.locatie {
+  width: 90px;
+}
+
+
+
+main{
+  width: 50%;
+  margin: 0 auto;
+
 }
 
 .aankomende-evenementen {
@@ -162,43 +189,25 @@ h1 {
 }
 
 
-#Voorjaarsaanbieding {
-  overflow: hidden;
-  position: absolute;
-  align-items: center;
-  display: flex;
-}
 
-img[id="Doldwaze dagen"] {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#Lenteactie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .banner-images{
   display: flex;
-  margin-top: 10%;
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
-   
+  
 }
 
+
 .banner-images img{
-width: 30%;
+width: 10%;
 display: block;
 }
 .contact {
   position: relative;
   text-align: center;
-  top: 18vh;
+
 }
 
 input[type=text] {

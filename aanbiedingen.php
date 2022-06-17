@@ -39,7 +39,6 @@ while ($row = $result-> fetch_array()){
 } else {
     echo "query werkt niet";
 }
-
 ?>
 </section>
 
