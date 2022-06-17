@@ -34,11 +34,19 @@ $sql = "SELECT *, DATE_FORMAT(evenementen.datum, '%m %d %Y') as dag FROM eveneme
 LEFT JOIN locaties 
 ON evenementen.locatie_id = locaties.locatie_id 
 LEFT JOIN artiesten 
-ON evenementen.artiest_id = artiesten.artiest_id";
+ON evenementen.artiest_id = artiesten.artiest_id WHERE evenementen.evenement_id = ".$_GET['id'];
+
 
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
-    echo "<section class='evenementen'><div class='datum'>".$row[18]. "</div><div class='locatie'>" .$row[7]."</div><div class='link'><a href='event-details.php?id=".$row[0]."'>meer info</a></div></section>";
+    echo "<section class='evenementen'>
+    <div class='datum'>".$row[18]. "</div>
+    <div class='locatie'>" .$row[11]."</div>
+    <div class='locatie'>" .$row[1]."</div>
+    <div class='locatie'>" .$row[4]."</div>
+    <div class='locatie'>" .$row[6]."</div>
+    <div class='link'><a href='event-details.php?id=".$row[0]."'>meer info</a></div>
+    </section>";
 } 
 } else {
     echo "query werkt niet";
