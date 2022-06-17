@@ -145,6 +145,12 @@ h1 {
   bottom: 40rem;
 }
 
+.aankomende-evenementen {
+  margin-left: 100rem;
+  position: relative;
+  bottom: 40rem;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -155,21 +161,6 @@ h1 {
 
 }
 
-#aardbei-info {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 180px;
-  margin-left: 5%;
-}
-
-.aardbei-info p {
-  color: white;
-  font-size: larger;
-  font-family: 'Russo One', sans-serif;
-  margin-left: 50px;
-}
 
 #Voorjaarsaanbieding {
   overflow: hidden;
@@ -199,6 +190,7 @@ img[id="Doldwaze dagen"] {
   overflow: hidden;
    
 }
+
 .banner-images img{
 width: 30%;
 display: block;
@@ -239,3 +231,111 @@ input[type=text] {
   top: auto;
   right: 10rem;
 }
+
+.meer-info1 a ,.meer-info2 a, .meer-info3 a, .meer-info4 a {
+  border: 4px solid red;
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.meer-info1 a {
+  border: 4px solid red;
+}
+
+.meer-info2 a {
+  border: 4px solid green;
+}
+
+.meer-info3 a {
+  border: 4px solid red;
+}
+
+.meer-info4 a {
+  border: 4px solid yellow;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  margin-top: 50px;
+  margin-left: 600px;
+}
+
+.aardbei-info img {
+  width: 40%;
+  height: 40%;
+  position: relative;
+  left: 15rem;
+  top: 40px;
+}
+
+#aardbei-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 180px;
+  margin-left: 5%;
+  font-size: xx-large;
+}
+
+.aardbei-info p {
+  color: white;
+  font-size: larger;
+  font-family: 'Russo One', sans-serif;
+  margin-left: 50px;
+  float: right;
+  position: relative;
+  top: 100px;
+  right: 200px;
+}
+
+#aardbei-info-appel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 180px;
+  margin-left: 5%;
+  font-size: xx-large;
+  -webkit-text-stroke: 2px green;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+
+#aardbei-info-citroen {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 180px;
+  margin-left: 5%;
+  font-size: xx-large;
+  -webkit-text-stroke: 1px yellow;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+
+
+

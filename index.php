@@ -46,7 +46,7 @@ while ($row = $result-> fetch_row()){
     echo "query werkt niet";
 }
 
-echo "<h1 class = 'evenementen'>Aankomende evenementen</h1>";
+echo "<h1 class = 'aankomende-evenementen'>Aankomende evenementen</h1>";
 $sql = "SELECT evenementen.datum, locaties.gebouw FROM evenementen LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id WHERE datum > NOW() LIMIT 3;";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){

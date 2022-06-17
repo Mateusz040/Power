@@ -25,10 +25,10 @@
         </ul>
     </nav>
     <section class ="aardbei-info">
-        <h1 id ="aardbei-info">Powerdrink aardbeismaak</h1>
-        <img src="images/achterkantaardbei.png" alt="">
+        <h1 id ="aardbei-info-appel">Powerdrink appel</h1>
+        <img src="images/achterkantappel.png" alt="">
         <p>
-           Onze Powerdrink aardbeien smaak heeft weinig calorien en geen suiker! <br> Daarnaast is die gemaakt van water en aardbeien juice! <br> Deze drankje is gemaakt voor sporters die op hun kcal letten <br>maar ook voor mensen die van een lekkere verfrissende drankje!
+           Onze Powerdrink appel smaak heeft weinig calorien en geen suiker! <br> Daarnaast is die gemaakt van water en aardbeien juice! <br> Deze drankje is gemaakt voor sporters die op hun kcal letten <br>maar ook voor mensen die van een lekkere verfrissende drankje houden!
         </p>
     </section>
 </body>

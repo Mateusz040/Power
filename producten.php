@@ -26,19 +26,19 @@
     </nav>
 
     <section class="flex-container">
-       <article>
+        <div id = "images-product">
         <img src="images/aardbei.png" alt="aardbeismaak">
         <img src="images/appel.png" alt="appelsmaak">
         <img src="images/watermeloen.png" alt="watermeloensmaak">
         <img src="images/citroen.png" alt="citroensmaak">
-       </article>
+        </div>  
     </section>
     <section>
     <article class="container">
         <button class = "meer-info1"><a href="aardbei.php">Meer info</a></button>
-        <button class = "meer-info2"><a href="#">Meer info</a></button>
-        <button class = "meer-info3"><a href="#">Meer info</a></button>
-        <button class = "meer-info4"><a href="#">Meer info</a></button>
+        <button class = "meer-info2"><a href="appel.php">Meer info</a></button>
+        <button class = "meer-info3"><a href="watermeloen.php">Meer info</a></button>
+        <button class = "meer-info4"><a href="citroen.php">Meer info</a></button>
        </article>
     </section>
 </body>
