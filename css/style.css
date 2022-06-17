@@ -171,25 +171,7 @@ h1 {
   margin-left: 50px;
 }
 
-#Voorjaarsaanbieding {
-  overflow: hidden;
-  position: absolute;
-  align-items: center;
-  display: flex;
-}
 
-img[id="Doldwaze dagen"] {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#Lenteactie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .banner-images{
   display: flex;
@@ -200,7 +182,7 @@ img[id="Doldwaze dagen"] {
    
 }
 .banner-images img{
-width: 30%;
+width: 10%;
 display: block;
 }
 .contact {
