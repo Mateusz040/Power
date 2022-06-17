@@ -58,7 +58,7 @@ nav {
     width: 50%;
     height: 50%;
     left: 25rem;
-    top: 150px;
+
 
 }
 
@@ -85,7 +85,8 @@ nav {
   font-size: larger;
   font-family: 'Russo One', sans-serif;
   margin-left: 50px;
-  
+  position: relative;
+  bottom: 30rem;
 }
 
 .huidige-aanbiedingen {
@@ -100,6 +101,8 @@ nav {
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
+       position: relative;
+       bottom: 30rem;
 }
 
 h1 {
@@ -113,6 +116,8 @@ h1 {
        1px 1px 0 #000;
     margin-left: 50px;
     font-family: 'Russo One', sans-serif;
+    position: relative;
+    bottom: 31rem;
 }
 
 .evenementen h1 {
@@ -251,6 +256,8 @@ input[type=text] {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  position: relative;
+  top: -10rem;
 }
 
 .meer-info1 a {
