@@ -21,7 +21,25 @@
             <li><a href="events.php">Events</a></li>
             <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
             <li><a href="contact.php">Contact</a></li>
+            <li><a href="#">Log in</a></li>
         </ul>
     </nav>
+
+    <section class="flex-container">
+       <article>
+        <img src="images/aardbei.png" alt="aardbeismaak">
+        <img src="images/appel.png" alt="appelsmaak">
+        <img src="images/watermeloen.png" alt="watermeloensmaak">
+        <img src="images/citroen.png" alt="citroensmaak">
+       </article>
+    </section>
+    <section>
+    <article class="container">
+        <button class = "meer-info1"><a href="aardbei.php">Meer info</a></button>
+        <button class = "meer-info2"><a href="#">Meer info</a></button>
+        <button class = "meer-info3"><a href="#">Meer info</a></button>
+        <button class = "meer-info4"><a href="#">Meer info</a></button>
+       </article>
+    </section>
 </body>
 </html>

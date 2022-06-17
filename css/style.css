@@ -124,7 +124,51 @@ h1 {
        1px 1px 0 #000;
     margin-left: 50px;
     font-family: 'Russo One', sans-serif;
-    margin-left: 50rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.aankomende-events  {
+  color: white;
+  padding: 10px;
+  font-size: larger;
+  font-family: 'Russo One', sans-serif;
+  margin-left: 100rem;
+  position: relative;
+  bottom: 38rem;
+}
+
+.evenementen {
+  margin-left: 100rem;
+  position: relative;
+  bottom: 40rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 250px;
+  margin-left: 450px;
+
+}
+
+#aardbei-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 180px;
+  margin-left: 5%;
+}
+
+.aardbei-info p {
+  color: white;
+  font-size: larger;
+  font-family: 'Russo One', sans-serif;
+  margin-left: 50px;
 }
 
 #Voorjaarsaanbieding {

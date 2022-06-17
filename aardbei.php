@@ -13,7 +13,7 @@
     <title>Power Drink</title>
 </head>
 <body>
-<nav>
+    <nav>
         <img src="images/logo.png" alt="logo">
         <ul>
             <li><a href="index.php">Home</a></li>
@@ -24,26 +24,11 @@
             <li><a href="#">Log in</a></li>
         </ul>
     </nav>
-
-    <section class="banner-images">
-<?php
-require('connectie.php');
-$sql = "SELECT * FROM aanbiedingen";
-if($result = $conn->query($sql)){
-while ($row = $result-> fetch_array()){
-    $image = $row['afbeelding'];
-?>
-    <img src="aanbiedingen/<?php echo $image; ?>"  />;
-<?php
- }
-} else {
-    echo "query werkt niet";
-}
-
-?>
-</section>
-
-
-
+    <section class ="aardbei-info">
+        <h1 id ="aardbei-info">Powerdrink aardbeismaak</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+    </section>
 </body>
 </html>
