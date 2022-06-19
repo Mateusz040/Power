@@ -21,7 +21,7 @@
             <li><a href="events.php">Events</a></li>
             <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="#">Log in</a></li>
+            <li><a href="inlogpage.php">Log in</a></li>
         </ul>
     </nav>
 <main>
@@ -46,6 +46,10 @@ while ($row = $result-> fetch_row()){
 ?>
 
 
-    </main>
+</main>
+    <footer>
+    <p>&copy; Power Drink</p>
+    <p class="footerp">Contact: powerenergy@info.nl</p>
+</footer>
 </body>
 </html>
