@@ -6,8 +6,8 @@ if(isset($_POST['submit'])){
 
             $username = $_POST["username"];
             $password = $_POST["password"];
-            $user = "";
-            $pass = "";
+            $user = "admin";
+            $pass = "admin";
 
             if ($username == $user && $password == $pass) {
                 session_start();

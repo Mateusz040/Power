@@ -21,7 +21,7 @@
             <li><a href="events.php">Events</a></li>
             <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="#">Log in</a></li>
+            <li><a href="inlogpage.php">Log in</a></li>
         </ul>
     </nav>
    
@@ -34,6 +34,10 @@
     <input type="submit" name="submit" value="Verzend">
 </form>
 </form>
+<footer>
+    <p>&copy; Power Drink</p>
+    <p class="footerp">Contact: powerenergy@info.nl</p>
+</footer>
 
 <?php
 if(isset($_POST['submit'])){

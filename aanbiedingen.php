@@ -23,6 +23,7 @@
             <li><a href="contact.php">Contact</a></li>
             <li><a href="#">Log in</a></li>
             <li><a href="aanbiedingen-detail.php">Contact</a></li>
+            <li><a href="inlogpage.php">Log in</a></li>
         </ul>
     </nav>
 
@@ -43,9 +44,13 @@ while ($row = $result-> fetch_array()){
 } else {
     echo "query werkt niet";
 } echo "<section class='aanbiedingen'><div class='link-aanbiedingen'><a href='aanbiedingen-detail.php?id=".$row."'>meer info</a></div></section>";
-
 ?>
     </section>
+    
+<footer>
+    <p>&copy; Power Drink</p>
+    <p class="footerp">Contact: powerenergy@info.nl</p>
+</footer>
 
 
 </body>
