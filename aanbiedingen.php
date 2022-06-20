@@ -7,7 +7,6 @@
     <meta name="description" content="Power energy">
     <meta name="keywords" content="HTML, CSS, JavaScript, PHP, SQL">
     <meta name="author" content="Mateusz, Mats, Michael, Esat">
-
     <link rel="stylesheet" href="css/style.css">
 
     <title>Power Drink</title>
@@ -28,7 +27,6 @@
     <section class="banner-images">
 <?php
 require('connectie.php');
-
 $sql = "SELECT * FROM aanbiedingen";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_array()){
