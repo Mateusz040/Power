@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body {
@@ -395,6 +396,8 @@ input[type=text] {
 .aanbiedingen {
 margin: 0 auto;
 width: 100%;
+padding: 10px;
+color: white;
 }
 
 footer {

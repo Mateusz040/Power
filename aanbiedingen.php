@@ -28,6 +28,7 @@
     <section class="banner-images">
 <?php
 require('connectie.php');
+
 $sql = "SELECT * FROM aanbiedingen";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_array()){
