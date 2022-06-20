@@ -37,7 +37,7 @@ if($result = $conn->query($sql)){
         <div class='omschrijving'>".$row[1]. "</div>
         <div class='datum'>" .$row[2]."</div>
         <div class='omschrijving'>" .$row[4]."</div>
-        <div class='link-aanbiedingen'><a href='aanbiedingen.php?id=".$row[0]."'>meer info</a></div>
+        <div class='link-aanbiedingen'><a href='aanbiedingen.php?id=".$row[0]."'>Terug naar Pagina</a></div>
         </section>";
     } 
     } else {
