@@ -9,10 +9,10 @@
     <meta name="author" content="Mateusz, Mats, Michael, Esat">
 
     <link rel="stylesheet" href="css/style.css">
-
     <title>Power Drink</title>
 </head>
 <body>
+
 <nav>
         <img src="images/logo.png" alt="logo">
         <ul>
@@ -23,30 +23,31 @@
             <li><a href="contact.php">Contact</a></li>
             <li><a href="#">Log in</a></li>
             <li><a href="aanbiedingen-detail.php">Contact</a></li>
+
         </ul>
     </nav>
-
-    <section class="banner-images">
+<main>
 <?php
+
 require('connectie.php');
+
 $sql = "SELECT * FROM aanbiedingen";
+
 if($result = $conn->query($sql)){
-while ($row = $result-> fetch_array()){
-    $image = $row['afbeelding'];
-
-?>
-
- <img src="aanbiedingen/<?php echo $image; ?>"  />;
-   
-<?php
- }
-} else {
-    echo "query werkt niet";
-} echo "<section class='aanbiedingen'><div class='link-aanbiedingen'><a href='aanbiedingen-detail.php?id=".$row."'>meer info</a></div></section>";
-
-?>
-    </section>
+    while ($row = $result-> fetch_row()){
+        echo "<section class='aanbiedingen'>
+        <div class='omschrijving'>".$row[1]. "</div>
+        <div class='datum'>" .$row[2]."</div>
+        <div class='omschrijving'>" .$row[4]."</div>
+        <div class='link-aanbiedingen'><a href='aanbiedingen.php?id=".$row[0]."'>meer info</a></div>
+        </section>";
+    } 
+    } else {
+        echo "query werkt niet";
+    }
+    ?>
 
 
+    </main>
 </body>
 </html>

@@ -43,6 +43,8 @@ while ($row = $result-> fetch_row()){
 } else {
     echo "query werkt niet";
 }
+
+
 ?>
 
 

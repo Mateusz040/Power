@@ -199,11 +199,11 @@ main{
   
 }
 
-
 .banner-images img{
 width: 10%;
 display: block;
 }
+
 .contact {
   position: relative;
   text-align: center;
@@ -345,6 +345,33 @@ input[type=text] {
        1px 1px 0 #000;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+}
+
+.link-aanbiedingen {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  background-color: #ccc;
+  width: 80px;
+}
+
+.link-aanbiedingen >  a {
+  color: blue;
+  border: #000 3px solid;
+  font: bold 12px/12px sans-serif;
+  padding: 10px;
+}
 
 
-
+.aanbiedingen {
+margin: 0 auto;
+width: 100%;
+}
