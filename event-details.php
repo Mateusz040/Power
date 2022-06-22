@@ -25,29 +25,37 @@
         </ul>
     </nav>
 <main>
+
 <?php
 
 require('connectie.php');
 
 
-$sql = "SELECT *, DATE_FORMAT(evenementen.datum, '%m %d %Y') as dag FROM evenementen
-LEFT JOIN locaties 
-ON evenementen.locatie_id = locaties.locatie_id 
-LEFT JOIN artiesten 
-ON evenementen.artiest_id = artiesten.artiest_id WHERE evenementen.evenement_id = ".$_GET['id'];
+    $sql = "SELECT *, DATE_FORMAT(evenementen.datum, '%m %d %Y') as dag FROM evenementen
+    LEFT JOIN locaties 
+    ON evenementen.locatie_id = locaties.locatie_id 
+    LEFT JOIN artiesten 
+    ON evenementen.artiest_id = artiesten.artiest_id WHERE evenementen.evenement_id = ".$_GET['id'];
 
 
 if($result = $conn->query($sql)){
-while ($row = $result-> fetch_row()){
-    echo "<section class='evenementen'>
-    <div class='datum'>".$row[18]. "</div>
+    $row = $result-> fetch_row();
+    echo "<section class='evenement_detail'>
+    <h2>Dag</h2>
+    <div class='datum'>".$row[18]."</div>
+    "."<br>"."<h2>Artiesten</h2>
     <div class='locatie'>" .$row[11]."</div>
+    <div class='locatie'>" .$row[15]."</div>
+    "."<br>"."<h2>Datum</h2>
     <div class='locatie'>" .$row[1]."</div>
+    "."<br>"."<h2>Max aantal bezoekers</h2>
     <div class='locatie'>" .$row[4]."</div>
+    "."<br>"."<h2>Plaats</h2>
     <div class='locatie'>" .$row[6]."</div>
-    <div class='link'><a href='event-details.php?id=".$row[0]."'>meer info</a></div>
+    <div class='locatie'>" .$row[7]."</div>
+
     </section>";
-} 
+
 } else {
     echo "query werkt niet";
 }

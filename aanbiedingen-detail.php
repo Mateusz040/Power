@@ -25,21 +25,22 @@
         </ul>
     </nav>
 <main>
-<?php
+
+    <?php
 
 require('connectie.php');
 
-$sql = "SELECT * FROM aanbiedingen";
+$sql = "SELECT * FROM aanbiedingen WHERE aanbiedingen_id =".$_GET['id'];
 
 if($result = $conn->query($sql)){
-    while ($row = $result-> fetch_row()){
+   $row = $result-> fetch_row();
         echo "<section class='aanbiedingen'>
+        <h2>Titel</h2>
         <div class='omschrijving'>".$row[1]. "</div>
         <div class='datum'>" .$row[2]."</div>
         <div class='omschrijving'>" .$row[4]."</div>
         <div class='link-aanbiedingen'><a href='aanbiedingen.php?id=".$row[0]."'>Terug naar Pagina</a></div>
         </section>";
-    } 
     } else {
         echo "query werkt niet";
     }

@@ -36,12 +36,11 @@
 <?php
 require('connectie.php');
 echo "<h1>Huidige aanbiedingen</h1>";
-$sql = "SELECT titel, omschrijving FROM aanbiedingen LIMIT 3 OFFSET 4";
+$sql = "SELECT titel, omschrijving, aanbiedingen_id FROM aanbiedingen LIMIT 3 OFFSET 4";
 if($result = $conn->query($sql)){
 while ($row = $result-> fetch_row()){
     echo "<h2 class = 'huidige-aanbiedingen'>$row[0]</h2>";
     echo "<p class = 'huidige-aanbiedingen-omschrijving'>$row[1]</p>";
-
 } 
 } else {
     echo "query werkt niet";
@@ -56,12 +55,7 @@ while ($row = $result-> fetch_row()){
 } else {
     echo "query werkt niet";
 }
-
-
-
-
 ?>
-
 <footer>
     <p>&copy; Power Drink</p>
     <p class="footerp">Contact: powerenergy@info.nl</p>

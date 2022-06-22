@@ -25,10 +25,10 @@
         </ul>
     </nav>
 <main>
+
 <?php
 
 require('connectie.php');
-
 
 $sql = "SELECT *, DATE_FORMAT(evenementen.datum, '%m %d %Y') as dag FROM evenementen
 LEFT JOIN locaties 
@@ -43,11 +43,7 @@ while ($row = $result-> fetch_row()){
 } else {
     echo "query werkt niet";
 }
-
-
 ?>
-
-
 </main>
     <footer>
     <p>&copy; Power Drink</p>

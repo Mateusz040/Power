@@ -34,13 +34,13 @@ while ($row = $result-> fetch_array()){
 
 ?>
 
- <img src="aanbiedingen/<?php echo $image; ?>"  />;
+ <a href='aanbiedingen-detail.php?id=<?php echo $row['aanbiedingen_id'];?>'><img src="aanbiedingen/<?php echo $image; ?>"  /></a>;
    
 <?php
  }
 } else {
     echo "query werkt niet";
-} echo "<section class='aanbiedingen'><div class='link-aanbiedingen'><a href='aanbiedingen-detail.php?id=".$row."'>meer info</a></div></section>";
+}
 ?>
     </section>
 
