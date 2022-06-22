@@ -24,26 +24,63 @@
             <li><a href="inlogpage.php">Log in</a></li>
         </ul>
     </nav>
+    <div>
+        <div class="mySlides fade">
+            <img id="foto1" src="images/aardbei.png" alt="aardbei">
+            <img id="info-foto" src="images/achterkantaardbei.png" alt="aarbei-info">
+        </div>
 
-    <section class="flex-container">
-        <div id = "images-product">
-        <img src="images/aardbei.png" alt="aardbeismaak">
-        <img src="images/appel.png" alt="appelsmaak">
-        <img src="images/watermeloen.png" alt="watermeloensmaak">
-        <img src="images/citroen.png" alt="citroensmaak">
-        </div>  
-    </section>
-    <section>
-    <article class="container">
-        <button class = "meer-info1"><a href="aardbei.php">Meer info</a></button>
-        <button class = "meer-info2"><a href="appel.php">Meer info</a></button>
-        <button class = "meer-info3"><a href="watermeloen.php">Meer info</a></button>
-        <button class = "meer-info4"><a href="citroen.php">Meer info</a></button>
-       </article>
-    </section>
+        <div class="mySlides fade">
+            <img id="foto2" src="images/appel.png" alt="appel">
+            <img id="info-foto" src="images/achterkantappel.png" alt="appel-info">
+        </div>
+
+        <div class="mySlides fade">
+            <img id="foto3" src="images/citroen.png" alt="citroen">
+            <img id="info-foto" src="images/achterkantcitroen.png" alt="citroen-info">
+        </div>
+
+        <div class="mySlides fade">
+            <img id="foto4" src="images/watermeloen.png" alt="watermeloen">
+            <img id="info-foto" src="images/achterkantwatermeloen.png" alt="watermeloen-info">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
     <footer>
     <p>&copy; Power Drink</p>
     <p class="footerp">Contact: powerenergy@info.nl</p>
 </footer>
+<script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
 </body>
 </html>
